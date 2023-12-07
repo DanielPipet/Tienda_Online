@@ -1,0 +1,39 @@
+
+<div class="mx-auto container-lg row text-center">
+    <h1 class="py-3">Productos</h1>
+    <div class="row">
+        <div *ngFor="let producto of listaProductos" class="col-12 col-sm-6 col-lg-4">
+            <a href="publicacion" class="text-decoration-none card my-3 px-0">
+                <img src="https://img.freepik.com/vector-gratis/banner-desarrollo-sitios-web_33099-1687.jpg"
+                    class="card-img-top img-cover" alt="...">
+                <div class="card-body">
+                    <h3>{{producto.nombre}} {{producto.id}}</h3>
+                    <h4>{{ producto.precio | currency:'USD':true:'1.2-2'}}</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li [ngClass]="{'disabled': pagina <= '1'}" class="page-item">
+            <a [ngClass]="{'d-none': pagina !== '1'}" class="page-link">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+            <a href="productos?pagina=1" [ngClass]="{'d-none': pagina !== '2'}" class="page-link">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+            <a href="productos?pagina=2" [ngClass]="{'d-none': pagina !== '3'}" class="page-link">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li [ngClass]="{'active': pagina == '1'}" class="page-item"><a class="page-link" href="productos?pagina=1">1</a></li>
+          <li [ngClass]="{'active': pagina == '2'}" class="page-item"><a class="page-link" href="productos?pagina=2">2</a></li>
+          <li [ngClass]="{'active': pagina == '3'}" class="page-item"><a class="page-link" href="productos?pagina=3">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+    </nav>
+</div>

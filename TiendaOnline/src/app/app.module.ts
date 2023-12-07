@@ -7,11 +7,18 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FiltrosComponent } from './Components/filtros/filtros.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { PrivacidadComponent } from './privacidad/privacidad.component';
+import { ProductosComponent } from './productos/productos.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full'},
   { path: 'inicio', component: InicioComponent },
   { path: 'nosotros', component: NosotrosComponent },
+  { path: 'privacidad', component: PrivacidadComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'productos', component: ProductosComponent },
 ];  
 
 @NgModule({
@@ -22,6 +29,9 @@ const routes: Routes = [
     InicioComponent,
     FiltrosComponent,
     NosotrosComponent,
+    ContactoComponent,
+    PrivacidadComponent,
+    ProductosComponent,
   ],
   imports: [
     BrowserModule,

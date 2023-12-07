@@ -25,9 +25,9 @@
         <div class="col-6 col-md">
             <h5>Acerca de</h5>
             <ul class="list-unstyled text-small">
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Ubicación</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Términos de privacidad</a></li>
-                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Equipo de desarrollo</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="nosotros">Nosotros</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="nosotros#equipo">Equipo de desarrollo</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="privacidad">Términos de privacidad</a></li>
             </ul>
         </div>
         <div class="col-6 col-md">
@@ -41,7 +41,7 @@
             </ul>
         </div>
     </div>
-    <div id="FooterAccordion" class="container pb-4">
+    <div id="FooterAccordion" class="container">
         <div class="col-12 col-xl text-center">
             <img class="mb-2 mx-auto" src="assets/Img/Logo_Navbar.png" alt="" width="120" height="120">
         </div>
@@ -83,8 +83,7 @@
                             <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Diseño</a></li>
                             <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Dominio</a></li>
                             <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Hosting</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Posicionamiento</a>
-                            </li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Posicionamiento</a></li>
                             <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Publicidad</a></li>
                         </ul>
                     </div>
@@ -102,11 +101,11 @@
                     aria-labelledby="panelsStayOpen-headingThree">
                     <div class="accordion-body">
                         <ul class="list-unstyled text-small">
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Ubicación</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Términos de
-                                    privacidad</a></li>
-                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Equipo de
-                                    desarrollo</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="nosotros">Nosotros</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="nosotros#equipo">Equipo de
+                                desarrollo</a></li>
+                            <li class="mb-1"><a class="link-secondary text-decoration-none" href="privacidad">Términos de
+                                privacidad</a></li>
                         </ul>
                     </div>
                 </div>
@@ -137,14 +136,15 @@
             </div>
         </div>
     </div>
-    <div id="Copyright" class="text-center">
+    <div id="Copyright" class="text-center pb-3">
         <small class="d-block mb-3 text-muted mx-auto h6">© DPipet | 2023. Todos los derechos reservados</small>
     </div>
-    <div class="fixed-bottom py-3 text-center border-top navbar-light bg-light">
+    <div id="miObjeto1" class="pb-5 mb-5 collapse show"></div>
+    <div id="miObjeto2" class="fixed-bottom py-3 text-center border-top navbar-light bg-light collapse show">
         <div id="Cookies" class="text-center">
-            <h4 class="d-block mb-3 text-muted mx-auto h6">Al navegar por este sitio <b>aceptás el uso de cookies</b> para
-                agilizar tu experiencia de compra.</h4>
+          <h4 class="d-block mb-3 text-muted mx-auto h6">Al navegar por este sitio <b>aceptás el uso de cookies</b> para agilizar tu experiencia de compra.</h4>
         </div>
-        <button type="button" class="btn btn-secondary btn-lg" aria-label="Close">ENTENDIDO</button>
+        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="collapse" data-bs-target="#miObjeto1,#miObjeto2">ENTENDIDO</button>
     </div>
+      
 </footer>
